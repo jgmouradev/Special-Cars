@@ -22,10 +22,7 @@ header h1{
     letter-spacing: 10px;
     color: white;
 }
-select{
-    width: 300px;
-    padding: 5px 10px;
-}
+
 .menu{
     margin: 50px;
     display: flex;
@@ -41,6 +38,11 @@ select{
     background-color:#ADB8C6;
     padding: 20px;
     border-radius: 5px;
+    cursor: pointer;
+}
+.menu ul li.active{
+    background:gray;
+    color: white;
 }
 .menu a{
     color:snow;
@@ -51,12 +53,17 @@ select{
     align-items: center;
     margin: 20px;
     justify-content:space-evenly;
+    flex-wrap: wrap;
+    gap: 20px;
    
 }
-.cards img{
-    width: 400px;
+.card-item img{
+    width: 300px;
     object-fit:cover;
     border-radius: 10px;
+ }
+ .card .card-item.hide{
+    display: none;
  }
  footer{
      width: 100%;
